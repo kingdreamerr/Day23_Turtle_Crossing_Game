@@ -26,7 +26,8 @@
 
 #### Preview:
 
-![turtle game](./cross.png)
+![turtle game](./cross.png)||![turtle game](./cross2.png)
+
 
 
 ## How to run this on your device
