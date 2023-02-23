@@ -10,3 +10,15 @@ class CarManager:
         super().__init__()
         self.car_speed = STARTING_MOVE_DISTANCE
         self.all_cars = []
+
+    def create_car(self):
+        make_car = random.randint(1, 6)
+        if make_car == 1:
+            new_car = Turtle("square")
+            # new_car.setheading(180)
+            new_car.color(random.choice(COLORS))
+            new_car.shapesize(1, 2.5, 0.1)
+            new_car.penup()
+            random_position = random.randint(-250, 250)
+            new_car.goto(300, random_position)
+            self.all_cars.append(new_car)
