@@ -22,3 +22,14 @@ class CarManager:
             random_position = random.randint(-250, 250)
             new_car.goto(300, random_position)
             self.all_cars.append(new_car)
+
+    def set_location(self):
+        random_position = random.randint(-250, 250)
+        self.goto(300, random_position)
+
+    def move(self):
+        for car in self.all_cars:
+            car.backward(self.car_speed)
+
+    def level_up(self):
+        self.car_speed += MOVE_INCREMENT
